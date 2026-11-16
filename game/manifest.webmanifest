@@ -1,0 +1,20 @@
+{
+  "name": "Petualangan Pythagoras",
+  "short_name": "Pythagoras",
+  "description": "Game edukasi pixel-art Teorema Pythagoras (SMP Kelas VIII) dengan LKPD Proyek, kuis, dan jelajah dunia.",
+  "lang": "id",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "./",
+  "display": "standalone",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "any",
+  "background_color": "#5e3716",
+  "theme_color": "#5e3716",
+  "categories": ["education", "games"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

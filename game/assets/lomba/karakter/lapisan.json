@@ -1,0 +1,124 @@
+{
+ "sel": [
+  48,
+  72
+ ],
+ "kolom": 4,
+ "baris": [
+  "depan",
+  "kanan",
+  "belakang"
+ ],
+ "catatan": "Urutan gambar: lapisan _bawah -> tubuh -> lapisan atas. Arah kiri = cermin kanan. Bila tidak sejajar dengan sprite Anda, geser seluruh lapisan dengan dx/dy per kostum.",
+ "urutan_atas": [
+  "kain_batik",
+  "kebaya",
+  "selendang",
+  "syal",
+  "jubah",
+  "kacamata",
+  "topi",
+  "tongkat"
+ ],
+ "lapisan": {
+  "hat1": {
+   "nama": "Topi Petualang",
+   "slot": "topi",
+   "atas": "karakter/kostum/hat1.png"
+  },
+  "hat2": {
+   "nama": "Topi Ajaib",
+   "slot": "topi",
+   "atas": "karakter/kostum/hat2.png"
+  },
+  "scarf1": {
+   "nama": "Syal Merah",
+   "slot": "syal",
+   "atas": "karakter/kostum/scarf1.png"
+  },
+  "scarf2": {
+   "nama": "Syal Biru",
+   "slot": "syal",
+   "atas": "karakter/kostum/scarf2.png"
+  },
+  "cape1": {
+   "nama": "Jubah Merah",
+   "slot": "jubah",
+   "atas": "karakter/kostum/cape1.png",
+   "bawah": "karakter/kostum/cape1_bawah.png"
+  },
+  "cape2": {
+   "nama": "Jubah Ungu",
+   "slot": "jubah",
+   "atas": "karakter/kostum/cape2.png",
+   "bawah": "karakter/kostum/cape2_bawah.png"
+  },
+  "glasses1": {
+   "nama": "Kacamata Bulat",
+   "slot": "kacamata",
+   "atas": "karakter/kostum/glasses1.png"
+  },
+  "glasses2": {
+   "nama": "Kacamata Hitam",
+   "slot": "kacamata",
+   "atas": "karakter/kostum/glasses2.png"
+  },
+  "wings1": {
+   "nama": "Sayap Putih",
+   "slot": "sayap",
+   "atas": "karakter/kostum/wings1.png",
+   "bawah": "karakter/kostum/wings1_bawah.png"
+  },
+  "wings2": {
+   "nama": "Sayap Kupu-kupu",
+   "slot": "sayap",
+   "atas": "karakter/kostum/wings2.png",
+   "bawah": "karakter/kostum/wings2_bawah.png"
+  },
+  "staff1": {
+   "nama": "Tongkat Kayu",
+   "slot": "tongkat",
+   "atas": "karakter/kostum/staff1.png"
+  },
+  "staff2": {
+   "nama": "Tongkat Bintang",
+   "slot": "tongkat",
+   "atas": "karakter/kostum/staff2.png"
+  },
+  "budaya_blangkon": {
+   "nama": "Blangkon",
+   "slot": "topi",
+   "atas": "karakter/budaya/budaya_blangkon.png"
+  },
+  "budaya_peci": {
+   "nama": "Peci",
+   "slot": "topi",
+   "atas": "karakter/budaya/budaya_peci.png"
+  },
+  "budaya_ikat_kepala": {
+   "nama": "Ikat Kepala Kain",
+   "slot": "topi",
+   "atas": "karakter/budaya/budaya_ikat_kepala.png"
+  },
+  "budaya_caping": {
+   "nama": "Caping",
+   "slot": "topi",
+   "atas": "karakter/budaya/budaya_caping.png"
+  },
+  "budaya_kebaya": {
+   "nama": "Kebaya (atasan)",
+   "slot": "baju",
+   "atas": "karakter/budaya/budaya_kebaya.png"
+  },
+  "budaya_selendang": {
+   "nama": "Selendang Tenun",
+   "slot": "baju",
+   "atas": "karakter/budaya/budaya_selendang.png"
+  },
+  "budaya_kain_batik": {
+   "nama": "Kain Batik (bawah)",
+   "slot": "bawahan",
+   "atas": "karakter/budaya/budaya_kain_batik.png"
+  }
+ }
+}

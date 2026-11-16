@@ -1,0 +1,242 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "pythagoras": {
+      "rooms": {
+        "$room": {
+          ".read": "$room.matches(/^[A-Z0-9]{3,10}$/)",
+          "players": {
+            "$pid": {
+              ".write": "$room.matches(/^[A-Z0-9]{3,10}$/) && $pid.matches(/^p[a-z0-9]{6,24}$/)",
+              ".validate": "newData.hasChildren(['name', 'updated'])",
+              "name": {
+                ".validate": "newData.isString() && newData.val().length >= 1 && newData.val().length <= 40"
+              },
+              "kelas": {
+                ".validate": "newData.isString() && newData.val().length <= 20"
+              },
+              "sekolah": {
+                ".validate": "newData.isString() && newData.val().length <= 60"
+              },
+              "avatar": {
+                ".validate": "newData.isString() && newData.val().length <= 12"
+              },
+              "xp": {
+                ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 1000000"
+              },
+              "level": {
+                ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 1000"
+              },
+              "coins": {
+                ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 1000000"
+              },
+              "quiz": {
+                ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 100"
+              },
+              "final": {
+                ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 100"
+              },
+              "stars": {
+                ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 1000"
+              },
+              "pos": {
+                ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 6"
+              },
+              "online": {
+                ".validate": "newData.isBoolean()"
+              },
+              "scene": {
+                ".validate": "newData.isString() && newData.val().length <= 12"
+              },
+              "loc": {
+                ".validate": "newData.hasChildren(['w','x','y'])",
+                "w": {
+                  ".validate": "newData.isString() || newData.isNumber()"
+                },
+                "x": {
+                  ".validate": "newData.isNumber()"
+                },
+                "y": {
+                  ".validate": "newData.isNumber()"
+                },
+                "f": {
+                  ".validate": "newData.isNumber()"
+                },
+                "a": {
+                  ".validate": "newData.isNumber()"
+                },
+                "$o": {
+                  ".validate": false
+                }
+              },
+              "qz": {
+                "i": {
+                  ".validate": "newData.isNumber()"
+                },
+                "n": {
+                  ".validate": "newData.isNumber()"
+                },
+                "ok": {
+                  ".validate": "newData.isNumber()"
+                },
+                "$o": {
+                  ".validate": false
+                }
+              },
+              "updated": {
+                ".validate": "newData.isNumber() || newData.val() == now"
+              },
+              "$other": {
+                ".validate": false
+              }
+            }
+          },
+          "absen": {
+            ".write": "$room.matches(/^[A-Z0-9]{3,10}$/)",
+            "roster": {
+              "$kelas": {
+                "$sid": {
+                  ".validate": "newData.hasChildren(['n'])",
+                  "n": {
+                    ".validate": "newData.isString() && newData.val().length <= 40"
+                  },
+                  "o": {
+                    ".validate": "newData.isNumber()"
+                  },
+                  "$x": {
+                    ".validate": false
+                  }
+                }
+              }
+            },
+            "rec": {
+              "$tgl": {
+                "$kelas": {
+                  "$sid": {
+                    ".validate": "newData.isString() && newData.val().matches(/^[HISA]$/)"
+                  }
+                }
+              }
+            }
+          },
+          "rapor": {
+            "$pid": {
+              ".write": "$room.matches(/^[A-Z0-9]{3,10}$/) && $pid.matches(/^p[a-z0-9]{6,24}$/)",
+              ".validate": "newData.hasChildren(['n','ts'])",
+              "n": {
+                ".validate": "newData.isString() && newData.val().length <= 40"
+              },
+              "k": {
+                ".validate": "newData.isString() && newData.val().length <= 12"
+              },
+              "sk": {
+                ".validate": "newData.isString() && newData.val().length <= 60"
+              }
+            }
+          },
+          "eks3d": {
+            "links": {
+              "$id": {
+                ".write": "$room.matches(/^[A-Z0-9]{3,10}$/)",
+                ".validate": "newData.hasChildren(['t','u'])",
+                "t": {
+                  ".validate": "newData.isString() && newData.val().length <= 60"
+                },
+                "u": {
+                  ".validate": "newData.isString() && newData.val().length <= 500"
+                }
+              }
+            }
+          },
+          "qr": {
+            "$id": {
+              ".write": "$room.matches(/^[A-Z0-9]{3,10}$/)",
+              ".validate": "newData.hasChildren(['i'])",
+              "i": {
+                ".validate": "newData.isString() && newData.val().length <= 150000"
+              },
+              "t": {
+                ".validate": "newData.isString() && newData.val().length <= 60"
+              },
+              "u": {
+                ".validate": "newData.isString() && newData.val().length <= 500"
+              }
+            }
+          },
+          "custom": {
+            "$id": {
+              ".write": "$room.matches(/^[A-Z0-9]{3,10}$/)",
+              ".validate": "newData.hasChildren(['q','o','k'])",
+              "q": {
+                ".validate": "newData.isString() && newData.val().length <= 300"
+              }
+            }
+          },
+          "outfit": {
+            "$pid": {
+              ".write": "$room.matches(/^[A-Z0-9]{3,10}$/) && $pid.matches(/^p[a-z0-9]{6,24}$/)",
+              ".validate": "newData.isString() && newData.val().length <= 24"
+            }
+          },
+          "meta": {
+            ".write": "$room.matches(/^[A-Z0-9]{3,10}$/)",
+            "pin": {
+              ".validate": "newData.hasChildren(['h'])"
+            }
+          },
+          "bank": {
+            "$id": {
+              ".write": "$room.matches(/^[A-Z0-9]{3,10}$/)",
+              ".validate": "newData.hasChildren(['q','t','o','k'])",
+              "q": {
+                ".validate": "newData.isString() && newData.val().length <= 400"
+              },
+              "t": {
+                ".validate": "newData.val() == 'pg' || newData.val() == 'is' || newData.val() == 'bs'"
+              },
+              "ex": {
+                ".validate": "newData.isString() && newData.val().length <= 600"
+              },
+              "tp": {
+                ".validate": "newData.isString() && newData.val().length <= 40"
+              },
+              "lv": {
+                ".validate": "newData.isString() && newData.val().length <= 10"
+              },
+              "src": {
+                ".validate": "newData.isString() && newData.val().length <= 12"
+              },
+              "batch": {
+                ".validate": "newData.isString() && newData.val().length <= 40"
+              },
+              "h": {
+                ".validate": "newData.isString() && newData.val().length <= 20"
+              }
+            }
+          },
+          "bankb": {
+            "$id": {
+              ".write": "$room.matches(/^[A-Z0-9]{3,10}$/)",
+              ".validate": "newData.hasChildren(['n','c','ts'])",
+              "n": {
+                ".validate": "newData.isString() && newData.val().length <= 80"
+              }
+            }
+          },
+          "video": {
+            ".write": "$room.matches(/^[A-Z0-9]{3,10}$/)",
+            "active": {
+              ".validate": "newData.hasChildren(['u','v']) && newData.child('u').isString() && newData.child('u').val().matches(/^(https:\\/\\/|assets\\/)/) && newData.child('u').val().length <= 600"
+            },
+            "hist": {
+              "$v": {
+                ".validate": "newData.hasChildren(['u','v']) && newData.child('u').isString() && newData.child('u').val().matches(/^(https:\\/\\/|assets\\/)/)"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

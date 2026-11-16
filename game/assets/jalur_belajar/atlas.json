@@ -1,0 +1,642 @@
+{
+ "prop_rumah_tangga": {
+  "kategori": "prop",
+  "frame_w": 340,
+  "frame_h": 300,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/prop_rumah_tangga.png",
+  "ket": "tangga bersandar di dinding rumah (tinggi dinding, jarak kaki, panjang tangga)"
+ },
+ "prop_buku_cetak": {
+  "kategori": "prop",
+  "frame_w": 280,
+  "frame_h": 230,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/prop_buku_cetak.png",
+  "ket": "buku cetak persegi panjang (panjang, lebar, diagonal)"
+ },
+ "prop_televisi": {
+  "kategori": "prop",
+  "frame_w": 320,
+  "frame_h": 260,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/prop_televisi.png",
+  "ket": "layar TV (ukuran layar = diagonal)"
+ },
+ "prop_tangga_dinding": {
+  "kategori": "prop",
+  "frame_w": 300,
+  "frame_h": 320,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/prop_tangga_dinding.png",
+  "ket": "tangga bersandar tampak samping besar"
+ },
+ "prop_ramp_kursi_roda": {
+  "kategori": "prop",
+  "frame_w": 380,
+  "frame_h": 250,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/prop_ramp_kursi_roda.png",
+  "ket": "ramp kursi roda (tinggi, jarak datar, panjang miring)"
+ },
+ "prop_gerobak_truk": {
+  "kategori": "prop",
+  "frame_w": 420,
+  "frame_h": 280,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/prop_gerobak_truk.png",
+  "ket": "gerobak naik papan landai ke bak truk"
+ },
+ "prop_layang_layang": {
+  "kategori": "prop",
+  "frame_w": 220,
+  "frame_h": 300,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/prop_layang_layang.png",
+  "ket": "layang-layang dan benang"
+ },
+ "prop_atap_rumah": {
+  "kategori": "prop",
+  "frame_w": 340,
+  "frame_h": 260,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/prop_atap_rumah.png",
+  "ket": "rumah beratap pelana (tinggi atap, setengah lebar, panjang kasau)"
+ },
+ "prop_lapangan_bola": {
+  "kategori": "prop",
+  "frame_w": 380,
+  "frame_h": 250,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/prop_lapangan_bola.png",
+  "ket": "lapangan persegi panjang (jalan diagonal)"
+ },
+ "prop_tenda_pramuka": {
+  "kategori": "prop",
+  "frame_w": 340,
+  "frame_h": 240,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/prop_tenda_pramuka.png",
+  "ket": "tenda pramuka dan tali tambat"
+ },
+ "landmark_gedung_melayu_riau": {
+  "kategori": "landmark",
+  "frame_w": 480,
+  "frame_h": 320,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/landmark_gedung_melayu_riau.png",
+  "ket": "gedung bergaya Melayu Riau (terinspirasi, BUKAN replika gedung tertentu)"
+ },
+ "landmark_perpustakaan_tumpukan_buku": {
+  "kategori": "landmark",
+  "frame_w": 440,
+  "frame_h": 320,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/landmark_perpustakaan_tumpukan_buku.png",
+  "ket": "perpustakaan berbentuk tumpukan buku (terinspirasi, bukan replika)"
+ },
+ "prop_tiang_bendera": {
+  "kategori": "prop",
+  "frame_w": 260,
+  "frame_h": 360,
+  "jumlah_frame": 8,
+  "fps": 8,
+  "loop": true,
+  "spritesheet": "spritesheet/prop_tiang_bendera.png",
+  "frames": "frames/prop_tiang_bendera/prop_tiang_bendera_00..07.png",
+  "ket": "tiang bendera + tali ke patok, bendera berkibar"
+ },
+ "kotak_a2": {
+  "kategori": "pembuktian",
+  "frame_w": 128,
+  "frame_h": 128,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/kotak_a2.png",
+  "ket": "persegi sisi a (ungu)"
+ },
+ "kotak_b2": {
+  "kategori": "pembuktian",
+  "frame_w": 128,
+  "frame_h": 128,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/kotak_b2.png",
+  "ket": "persegi sisi b (hijau tosca)"
+ },
+ "kotak_c2": {
+  "kategori": "pembuktian",
+  "frame_w": 128,
+  "frame_h": 128,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/kotak_c2.png",
+  "ket": "persegi sisi c (jingga)"
+ },
+ "segitiga_siku_kepingan": {
+  "kategori": "pembuktian",
+  "frame_w": 128,
+  "frame_h": 128,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/segitiga_siku_kepingan.png",
+  "ket": "kepingan segitiga siku-siku untuk seret-letak"
+ },
+ "ubin_a": {
+  "kategori": "pembuktian",
+  "frame_w": 48,
+  "frame_h": 48,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ubin_a.png",
+  "ket": "ubin satuan 48px"
+ },
+ "ubin_b": {
+  "kategori": "pembuktian",
+  "frame_w": 48,
+  "frame_h": 48,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ubin_b.png",
+  "ket": "ubin satuan 48px"
+ },
+ "ubin_c": {
+  "kategori": "pembuktian",
+  "frame_w": 48,
+  "frame_h": 48,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ubin_c.png",
+  "ket": "ubin satuan 48px"
+ },
+ "papan_pembuktian": {
+  "kategori": "latar",
+  "frame_w": 960,
+  "frame_h": 540,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "file": "latar/papan_pembuktian.png"
+ },
+ "animasi_bukti_gabung": {
+  "kategori": "pembuktian",
+  "frame_w": 360,
+  "frame_h": 260,
+  "jumlah_frame": 14,
+  "fps": 6,
+  "loop": false,
+  "spritesheet": "spritesheet/animasi_bukti_gabung.png",
+  "frames": "frames/animasi_bukti_gabung/animasi_bukti_gabung_00..13.png",
+  "ket": "a² (9 ubin) + b² (16 ubin) meluncur membentuk c² (25 ubin), segitiga 3-4-5"
+ },
+ "ikon_rumus": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_rumus.png",
+  "ket": ""
+ },
+ "ikon_contoh": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_contoh.png",
+  "ket": ""
+ },
+ "ikon_petunjuk": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_petunjuk.png",
+  "ket": ""
+ },
+ "ikon_periksa": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_periksa.png",
+  "ket": ""
+ },
+ "ikon_lanjut": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_lanjut.png",
+  "ket": ""
+ },
+ "ikon_kembali": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_kembali.png",
+  "ket": ""
+ },
+ "ikon_bintang": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_bintang.png",
+  "ket": ""
+ },
+ "ikon_gembok": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_gembok.png",
+  "ket": ""
+ },
+ "ikon_laporan": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_laporan.png",
+  "ket": ""
+ },
+ "ikon_penggaris": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_penggaris.png",
+  "ket": ""
+ },
+ "ikon_pembuktian": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_pembuktian.png",
+  "ket": ""
+ },
+ "ikon_bendera": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_bendera.png",
+  "ket": ""
+ },
+ "ikon_pos_1": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_pos_1.png",
+  "ket": ""
+ },
+ "ikon_pos_2": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_pos_2.png",
+  "ket": ""
+ },
+ "ikon_pos_3": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_pos_3.png",
+  "ket": ""
+ },
+ "ikon_pos_4": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_pos_4.png",
+  "ket": ""
+ },
+ "ikon_pos_5": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_pos_5.png",
+  "ket": ""
+ },
+ "ikon_pos_6": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_pos_6.png",
+  "ket": ""
+ },
+ "ikon_pos_1_selesai": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_pos_1_selesai.png",
+  "ket": ""
+ },
+ "ikon_pos_2_selesai": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_pos_2_selesai.png",
+  "ket": ""
+ },
+ "ikon_pos_3_selesai": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_pos_3_selesai.png",
+  "ket": ""
+ },
+ "ikon_pos_4_selesai": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_pos_4_selesai.png",
+  "ket": ""
+ },
+ "ikon_pos_5_selesai": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_pos_5_selesai.png",
+  "ket": ""
+ },
+ "ikon_pos_6_selesai": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_pos_6_selesai.png",
+  "ket": ""
+ },
+ "ikon_pos_terkunci": {
+  "kategori": "ikon",
+  "frame_w": 64,
+  "frame_h": 64,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/ikon_pos_terkunci.png",
+  "ket": ""
+ },
+ "tiang_pos_1": {
+  "kategori": "peta",
+  "frame_w": 100,
+  "frame_h": 140,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/tiang_pos_1.png",
+  "ket": "papan penunjuk pos di jalur belajar"
+ },
+ "tiang_pos_2": {
+  "kategori": "peta",
+  "frame_w": 100,
+  "frame_h": 140,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/tiang_pos_2.png",
+  "ket": "papan penunjuk pos di jalur belajar"
+ },
+ "tiang_pos_3": {
+  "kategori": "peta",
+  "frame_w": 100,
+  "frame_h": 140,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/tiang_pos_3.png",
+  "ket": "papan penunjuk pos di jalur belajar"
+ },
+ "tiang_pos_4": {
+  "kategori": "peta",
+  "frame_w": 100,
+  "frame_h": 140,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/tiang_pos_4.png",
+  "ket": "papan penunjuk pos di jalur belajar"
+ },
+ "tiang_pos_5": {
+  "kategori": "peta",
+  "frame_w": 100,
+  "frame_h": 140,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/tiang_pos_5.png",
+  "ket": "papan penunjuk pos di jalur belajar"
+ },
+ "tiang_pos_6": {
+  "kategori": "peta",
+  "frame_w": 100,
+  "frame_h": 140,
+  "jumlah_frame": 1,
+  "fps": 0,
+  "loop": false,
+  "file": "statis/tiang_pos_6.png",
+  "ket": "papan penunjuk pos di jalur belajar"
+ },
+ "efek_benar": {
+  "kategori": "efek",
+  "frame_w": 112,
+  "frame_h": 112,
+  "jumlah_frame": 8,
+  "fps": 12,
+  "loop": false,
+  "spritesheet": "spritesheet/efek_benar.png",
+  "frames": "frames/efek_benar/efek_benar_00..07.png",
+  "ket": "bintang+percikan saat jawaban benar"
+ },
+ "efek_salah": {
+  "kategori": "efek",
+  "frame_w": 112,
+  "frame_h": 112,
+  "jumlah_frame": 8,
+  "fps": 12,
+  "loop": false,
+  "spritesheet": "spritesheet/efek_salah.png",
+  "frames": "frames/efek_salah/efek_salah_00..07.png",
+  "ket": "silang bergetar saat salah"
+ },
+ "efek_konfeti": {
+  "kategori": "efek",
+  "frame_w": 220,
+  "frame_h": 180,
+  "jumlah_frame": 10,
+  "fps": 10,
+  "loop": true,
+  "spritesheet": "spritesheet/efek_konfeti.png",
+  "frames": "frames/efek_konfeti/efek_konfeti_00..09.png",
+  "ket": "konfeti selesai pos"
+ },
+ "efek_bohlam_petunjuk": {
+  "kategori": "efek",
+  "frame_w": 96,
+  "frame_h": 96,
+  "jumlah_frame": 8,
+  "fps": 8,
+  "loop": true,
+  "spritesheet": "spritesheet/efek_bohlam_petunjuk.png",
+  "frames": "frames/efek_bohlam_petunjuk/efek_bohlam_petunjuk_00..07.png",
+  "ket": "bohlam petunjuk menyala"
+ },
+ "npc_bu_guru_bicara": {
+  "kategori": "npc",
+  "frame_w": 128,
+  "frame_h": 168,
+  "jumlah_frame": 8,
+  "fps": 8,
+  "loop": true,
+  "spritesheet": "spritesheet/npc_bu_guru_bicara.png",
+  "frames": "frames/npc_bu_guru_bicara/npc_bu_guru_bicara_00..07.png",
+  "ket": "Bu Guru (Pos 1, 2, 3), mulut bergerak saat teks tampil"
+ },
+ "npc_bu_guru_diam": {
+  "kategori": "npc",
+  "frame_w": 128,
+  "frame_h": 168,
+  "jumlah_frame": 4,
+  "fps": 2,
+  "loop": true,
+  "spritesheet": "spritesheet/npc_bu_guru_diam.png",
+  "frames": "frames/npc_bu_guru_diam/npc_bu_guru_diam_00..03.png",
+  "ket": "Bu Guru (Pos 1, 2, 3), diam/bernapas"
+ },
+ "npc_pak_arsitek_bicara": {
+  "kategori": "npc",
+  "frame_w": 128,
+  "frame_h": 168,
+  "jumlah_frame": 8,
+  "fps": 8,
+  "loop": true,
+  "spritesheet": "spritesheet/npc_pak_arsitek_bicara.png",
+  "frames": "frames/npc_pak_arsitek_bicara/npc_pak_arsitek_bicara_00..07.png",
+  "ket": "Pak Arsitek (Pos 4), mulut bergerak saat teks tampil"
+ },
+ "npc_pak_arsitek_diam": {
+  "kategori": "npc",
+  "frame_w": 128,
+  "frame_h": 168,
+  "jumlah_frame": 4,
+  "fps": 2,
+  "loop": true,
+  "spritesheet": "spritesheet/npc_pak_arsitek_diam.png",
+  "frames": "frames/npc_pak_arsitek_diam/npc_pak_arsitek_diam_00..03.png",
+  "ket": "Pak Arsitek (Pos 4), diam/bernapas"
+ },
+ "npc_pak_pemandu_bicara": {
+  "kategori": "npc",
+  "frame_w": 128,
+  "frame_h": 168,
+  "jumlah_frame": 8,
+  "fps": 8,
+  "loop": true,
+  "spritesheet": "spritesheet/npc_pak_pemandu_bicara.png",
+  "frames": "frames/npc_pak_pemandu_bicara/npc_pak_pemandu_bicara_00..07.png",
+  "ket": "Pak Pemandu (Pos 5, 6), mulut bergerak saat teks tampil"
+ },
+ "npc_pak_pemandu_diam": {
+  "kategori": "npc",
+  "frame_w": 128,
+  "frame_h": 168,
+  "jumlah_frame": 4,
+  "fps": 2,
+  "loop": true,
+  "spritesheet": "spritesheet/npc_pak_pemandu_diam.png",
+  "frames": "frames/npc_pak_pemandu_diam/npc_pak_pemandu_diam_00..03.png",
+  "ket": "Pak Pemandu (Pos 5, 6), diam/bernapas"
+ }
+}

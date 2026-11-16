@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#5e3716">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Pythagoras">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Petualangan Pythagoras</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&family=Pixelify+Sans:wght@500;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="fxSprite" hidden aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <!-- Sprite ikon Petualangan Pythagoras. Gaya: garis tepi cokelat tua 2px, warna datar.
+       Pakai: <svg class="icon" aria-hidden="true"><use href="#ic-play"/></svg>
+       Semua ikon viewBox 0 0 32 32. -->
+
+  <!-- ===== VIDEO ===== -->
+  <symbol id="ic-play" viewBox="0 0 32 32"><path d="M10 6l16 10-16 10z" fill="#4CBF4A" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round"/><path d="M13 11l7 5-7 5z" fill="#fff" opacity=".35"/></symbol>
+  <symbol id="ic-pause" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round"><rect x="7" y="6" width="7" height="20" rx="2" fill="#F5A83A"/><rect x="18" y="6" width="7" height="20" rx="2" fill="#F5A83A"/></symbol>
+  <symbol id="ic-replay" viewBox="0 0 32 32" stroke="#3B2314" stroke-linejoin="round" stroke-linecap="round"><path d="M26 16a10 10 0 1 1-3.4-7.5" fill="none" stroke-width="3.2"/><path d="M27 4v9h-9z" fill="#3E8EE8" stroke-width="2"/></symbol>
+  <symbol id="ic-volume-on" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M4 12h5l8-6.5v21L9 20H4z" fill="#F5A83A"/><path d="M21 11a7 7 0 0 1 0 10M24.5 7.5a12 12 0 0 1 0 17" fill="none" stroke-width="2.6"/></symbol>
+  <symbol id="ic-volume-off" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M4 12h5l8-6.5v21L9 20H4z" fill="#B9A58A"/><path d="M21 12l7 8M28 12l-7 8" fill="none" stroke="#E5484D" stroke-width="3"/></symbol>
+  <symbol id="ic-fullscreen" viewBox="0 0 32 32" fill="none" stroke="#3B2314" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12V6h6M20 6h6v6M26 20v6h-6M12 26H6v-6"/></symbol>
+
+  <!-- ===== UNGGAH & BERKAS ===== -->
+  <symbol id="ic-upload" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round"><rect x="4" y="22" width="24" height="6" rx="2.5" fill="#3E8EE8"/><path d="M16 3l9 10h-5.5v9h-7v-9H7z" fill="#4CBF4A"/></symbol>
+  <symbol id="ic-swap-video" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><rect x="3" y="10" width="17" height="13" rx="3" fill="#9B6BE0"/><path d="M20 15l7-3.5v9L20 17z" fill="#F7CF4B"/><path d="M9 6h12m0 0l-3-3m3 3l-3 3" fill="none" stroke-width="2.4"/></symbol>
+  <symbol id="ic-file-pdf" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round"><path d="M7 3h13l6 6v20H7z" fill="#FFF6DC"/><path d="M20 3v6h6" fill="#F5DB9A"/><rect x="3.5" y="15" width="19" height="9" rx="2.5" fill="#E5484D"/><text x="13" y="22.3" font-family="Arial,sans-serif" font-size="7" font-weight="800" fill="#fff" stroke="none" text-anchor="middle">PDF</text></symbol>
+  <symbol id="ic-file-word" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round"><path d="M7 3h13l6 6v20H7z" fill="#FFF6DC"/><path d="M20 3v6h6" fill="#F5DB9A"/><rect x="3.5" y="15" width="19" height="9" rx="2.5" fill="#3E8EE8"/><text x="13" y="22.3" font-family="Arial,sans-serif" font-size="7" font-weight="800" fill="#fff" stroke="none" text-anchor="middle">DOC</text></symbol>
+  <symbol id="ic-file-excel" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round"><path d="M7 3h13l6 6v20H7z" fill="#FFF6DC"/><path d="M20 3v6h6" fill="#F5DB9A"/><rect x="3.5" y="15" width="19" height="9" rx="2.5" fill="#43B040"/><text x="13" y="22.3" font-family="Arial,sans-serif" font-size="7" font-weight="800" fill="#fff" stroke="none" text-anchor="middle">XLS</text></symbol>
+  <symbol id="ic-template" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M6 3h14l6 6v20H6z" fill="#FFF6DC"/><path d="M20 3v6h6" fill="#F5DB9A"/><path d="M10 14h12M10 18h12" fill="none" stroke-width="2"/><path d="M16 21v6m0 0l-3-3m3 3l3-3" fill="none" stroke="#2A6FC4" stroke-width="2.6"/></symbol>
+  <symbol id="ic-dropzone" viewBox="0 0 32 32" stroke="#3B2314" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="24" height="24" rx="6" fill="#FFF6DC" stroke-width="2.2" stroke-dasharray="4 3"/><path d="M16 10v12M10 16h12" fill="none" stroke="#4CBF4A" stroke-width="3.6"/></symbol>
+
+  <!-- ===== STATUS ===== -->
+  <symbol id="ic-check" viewBox="0 0 32 32" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="12.5" fill="#4CBF4A" stroke="#3B2314" stroke-width="2.2"/><path d="M10 16.5l4.5 4.5L22.5 11" fill="none" stroke="#fff" stroke-width="3.6"/></symbol>
+  <symbol id="ic-warning" viewBox="0 0 32 32" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3.5l13 23.5H3z" fill="#F7CF4B" stroke="#3B2314" stroke-width="2.2"/><path d="M16 12v7" stroke="#3B2314" stroke-width="3.2" fill="none"/><circle cx="16" cy="23" r="1.8" fill="#3B2314"/></symbol>
+  <symbol id="ic-error" viewBox="0 0 32 32" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="12.5" fill="#E5484D" stroke="#3B2314" stroke-width="2.2"/><path d="M11 11l10 10M21 11L11 21" fill="none" stroke="#fff" stroke-width="3.6"/></symbol>
+  <symbol id="ic-info" viewBox="0 0 32 32" stroke-linecap="round"><circle cx="16" cy="16" r="12.5" fill="#3E8EE8" stroke="#3B2314" stroke-width="2.2"/><path d="M16 14.5v7" stroke="#fff" stroke-width="3.4" fill="none"/><circle cx="16" cy="10.3" r="1.9" fill="#fff"/></symbol>
+  <symbol id="ic-spinner" viewBox="0 0 32 32" fill="none" stroke-linecap="round"><circle cx="16" cy="16" r="11" stroke="#3B2314" stroke-opacity=".2" stroke-width="4"/><path d="M16 5a11 11 0 0 1 11 11" stroke="#3B2314" stroke-width="4"/></symbol>
+  <symbol id="ic-undo" viewBox="0 0 32 32" stroke="#3B2314" stroke-linejoin="round" stroke-linecap="round"><path d="M10 11h10a6.5 6.5 0 0 1 0 13h-7" fill="none" stroke-width="3.4"/><path d="M3.5 11L12 4v14z" fill="#F5A83A" stroke-width="2.2"/></symbol>
+  <symbol id="ic-history" viewBox="0 0 32 32" stroke="#3B2314" stroke-linejoin="round" stroke-linecap="round"><circle cx="17" cy="16" r="11" fill="#FFF6DC" stroke-width="2.2"/><path d="M17 9.5V16l4.5 3" fill="none" stroke-width="2.6"/><path d="M3 12l5 5 3.5-5.5z" fill="#3E8EE8" stroke-width="1.8"/></symbol>
+  <symbol id="ic-trash" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M8 10h16l-1.5 18h-13z" fill="#E5484D"/><path d="M5.5 10h21M12.5 10V6h7v4" fill="none"/><path d="M13 15v9M19 15v9" stroke="#fff" stroke-width="2"/></symbol>
+  <symbol id="ic-edit" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M5 27l1.5-6.5L21 6l5 5L11.5 25.5z" fill="#F7CF4B"/><path d="M17.5 9.5l5 5" fill="none"/><path d="M5 27l1.5-6.5 5 5z" fill="#F5DB9A"/></symbol>
+
+  <!-- ===== JELAJAH DUNIA ===== -->
+  <symbol id="ic-profile" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round"><circle cx="16" cy="11" r="6" fill="#F5C9A0"/><path d="M4.5 28c0-6.5 5-10.5 11.5-10.5S27.5 21.5 27.5 28z" fill="#3E8EE8"/></symbol>
+  <symbol id="ic-avatar" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><circle cx="16" cy="16" r="13" fill="#8FD0F0"/><path d="M8 17c0-6 3.5-9 8-9s8 3 8 9c-2-3-5-4-8-4s-6 1-8 4z" fill="#E8588A"/><circle cx="16" cy="18" r="6" fill="#F5C9A0"/><path d="M13.5 20.2q2.5 2 5 0" fill="none" stroke-width="1.8"/><circle cx="13.7" cy="17" r=".9" fill="#3B2314" stroke="none"/><circle cx="18.3" cy="17" r=".9" fill="#3B2314" stroke="none"/></symbol>
+  <symbol id="ic-book" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M3.5 7c5-2 9-1 12.5 2 3.500-3 7.500-4 12.500-2v18c-5-2-9-1-12.500 2-3.500-3-7.500-4-12.500-2z" fill="#FFF6DC"/><path d="M16 9v18" fill="none"/><path d="M7 12c2-.5 4-.3 6 .7M7 16c2-.5 4-.3 6 .7M19 12.700c2-1 4-1.200 6-.700M19 16.700c2-1 4-1.200 6-.700" fill="none" stroke-width="1.6"/></symbol>
+  <symbol id="ic-topic" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round"><path d="M4 16.5V5h11.500L28 17.500 17.500 28z" fill="#9B6BE0"/><circle cx="10.500" cy="10.500" r="2.300" fill="#FFF6DC"/></symbol>
+  <symbol id="ic-star" viewBox="0 0 32 32"><polygon points="16,3 20,12 29.500,12.800 22.300,19 24.600,28.500 16,23.400 7.400,28.500 9.700,19 2.500,12.800 12,12" fill="#F7CF4B" stroke="#3B2314" stroke-width="2.200" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-star-empty" viewBox="0 0 32 32"><polygon points="16,3 20,12 29.500,12.800 22.300,19 24.600,28.500 16,23.400 7.400,28.500 9.700,19 2.500,12.800 12,12" fill="#EAD9AE" stroke="#3B2314" stroke-width="2.200" stroke-linejoin="round" opacity=".7"/></symbol>
+  <symbol id="ic-count" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round"><rect x="4" y="4" width="24" height="24" rx="6" fill="#3E8EE8"/><text x="16" y="22" font-family="Arial,sans-serif" font-size="15" font-weight="800" fill="#fff" stroke="none" text-anchor="middle">#</text></symbol>
+  <symbol id="ic-auto-soal" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round"><rect x="4" y="4" width="24" height="24" rx="6" fill="#FFF"/><circle cx="11" cy="11" r="2.200" fill="#3B2314" stroke="none"/><circle cx="21" cy="11" r="2.200" fill="#3B2314" stroke="none"/><circle cx="16" cy="16" r="2.200" fill="#3B2314" stroke="none"/><circle cx="11" cy="21" r="2.200" fill="#3B2314" stroke="none"/><circle cx="21" cy="21" r="2.200" fill="#3B2314" stroke="none"/></symbol>
+  <symbol id="ic-soal-unggahan" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M3 9h9l2.500 3H29v15H3z" fill="#F7CF4B"/><path d="M16 24v-8m0 0l-3.500 3.500M16 16l3.500 3.500" fill="none" stroke="#3B2314" stroke-width="2.600"/></symbol>
+  <symbol id="ic-map" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.200" stroke-linejoin="round" stroke-linecap="round"><path d="M3.500 8L11.500 5l9 3 8-3v19l-8 3-9-3-8 3z" fill="#4CBF4A"/><path d="M11.500 5v19M20.500 8v19" fill="none"/><path d="M22 13l4 4M26 13l-4 4" stroke="#E5484D" stroke-width="2.600" fill="none"/></symbol>
+  <symbol id="ic-start" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.200" stroke-linejoin="round" stroke-linecap="round"><path d="M8 3v26" fill="none" stroke-width="3"/><path d="M8 5h17l-4.500 5.500L25 16H8z" fill="#E5484D"/></symbol>
+  <symbol id="ic-sparkle" viewBox="0 0 32 32"><polygon points="16,2.500 19.500,12.500 29.500,16 19.500,19.500 16,29.500 12.500,19.500 2.500,16 12.500,12.500" fill="#F7CF4B" stroke="#3B2314" stroke-width="2" stroke-linejoin="round"/></symbol>
+
+  <!-- ===== BANGUN DATAR ===== -->
+  <symbol id="ic-shape-persegi" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.200" stroke-linejoin="round"><rect x="5" y="5" width="22" height="22" rx="1.500" fill="#F7CF4B"/></symbol>
+  <symbol id="ic-shape-persegi-panjang" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.200" stroke-linejoin="round"><rect x="2.500" y="8" width="27" height="16" rx="1.500" fill="#5FA6F5"/></symbol>
+  <symbol id="ic-shape-segitiga-siku" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.200" stroke-linejoin="round"><path d="M5 27V5l22 22z" fill="#4CBF4A"/><path d="M5 21h6v6" fill="none" stroke-width="1.800"/></symbol>
+  <symbol id="ic-shape-jajar-genjang" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.200" stroke-linejoin="round"><path d="M9 7h20l-6 18H3z" fill="#E8588A"/></symbol>
+  <symbol id="ic-shape-trapesium" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.200" stroke-linejoin="round"><path d="M10 7h12l8 18H2z" fill="#9B6BE0"/></symbol>
+  <symbol id="ic-shape-belah-ketupat" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.200" stroke-linejoin="round"><path d="M16 3l12 13-12 13L4 16z" fill="#1FA588"/></symbol>
+  <symbol id="ic-shape-layang-layang" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.200" stroke-linejoin="round"><path d="M16 2.500l11 10.500-11 16.500L5 13z" fill="#F5A83A"/><path d="M5 13h22M16 2.500v27" fill="none" stroke-width="1.600"/></symbol>
+  <symbol id="ic-shape-lingkaran" viewBox="0 0 32 32" stroke="#3B2314" stroke-width="2.200" stroke-linejoin="round"><circle cx="16" cy="16" r="12.500" fill="#8FD0F0"/><path d="M16 16h12.500" fill="none" stroke-width="1.800"/></symbol>
+  <symbol id="ic-right-angle" viewBox="0 0 32 32" fill="none" stroke="#3B2314" stroke-width="2.600" stroke-linejoin="round" stroke-linecap="round"><path d="M6 5v21h21"/><path d="M6 19h7v7" stroke-width="2"/></symbol>
+</svg></div>
+<a class="skip" href="#app">Lewati ke konten</a>
+<div id="game">
+  <header id="hud" hidden>
+    <button class="hud-btn nosfx" id="hudBack" aria-label="Kembali"><img src="assets/img/ic_left.png" class="px" alt=""></button>
+    <span class="hud-title" id="hudTitle"></span>
+    <span class="hud-player" id="hudPlayer"></span>
+    <span class="hud-lv"><b id="hudLv">Lv 1</b><span class="hud-bar"><i id="hudXp"></i></span></span>
+    <span class="hud-stars"><img src="assets/img/new/m_star.png" alt="Bintang"><b id="hudStars">0</b></span>
+  </header>
+  <main id="app" tabindex="-1"><p class="loading">Memuat petualangan…</p></main>
+  <nav id="dock" aria-label="Navigasi utama" hidden></nav>
+</div>
+<div id="wm" aria-hidden="true">Made by Didit Fakhrullah</div>
+<button id="audioBtn" class="nosfx" aria-label="Pengaturan suara" title="Pengaturan suara">
+  <img class="px on" src="assets/img/ic_vol_on.png" alt=""><img class="px off" src="assets/img/ic_vol_off.png" alt="">
+  <span class="eq"><i></i><i></i><i></i><i></i></span></button>
+<div id="audioHint" hidden>Ketuk layar untuk menyalakan musik</div>
+<aside id="audioPanel" class="panel" hidden aria-label="Pengaturan suara"></aside>
+<div id="modal" hidden></div>
+<div id="toasts" aria-live="polite"></div>
+<div id="fx" aria-hidden="true"></div>
+<noscript><p style="padding:20px;background:#fff">Game ini membutuhkan JavaScript. Aktifkan JavaScript pada browser Anda.</p></noscript>
+<script src="js/firebase-config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/audio-config.js"></script>
+<script src="js/store.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/viz.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/lkpd_ikon.js"></script>
+<script src="js/qrlib.js"></script>
+<script src="js/lkpd_data.js"></script>
+<script src="js/lkpd.js"></script>
+<script src="js/integrasi.js"></script>
+<script src="js/pwa.js"></script>
+<script src="js/ikon.js"></script>
+<script src="js/deco.js"></script>
+<script src="js/server.js"></script>
+<script src="js/app.js"></script>
+<script src="js/bookfig.js"></script>
+<script src="js/cerita.js"></script>
+<script src="js/materi.js"></script>
+<script src="js/latihan_data.js"></script>
+<script src="js/puzzle.js"></script>
+<script src="js/jalur.js"></script>
+<script src="js/absen.js"></script>
+<script src="js/planning.js"></script>
+<script src="js/pend_art.js"></script>
+<script src="js/pendahuluan.js"></script>
+<script src="js/jba-mesin.js"></script>
+<script src="js/jba-alat.js"></script>
+<script src="js/alat_pasang.js"></script>
+<script src="js/games.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/report.js"></script>
+<script src="js/shapes.js"></script>
+<script src="js/art.js"></script>
+<script src="js/art_city.js"></script>
+<script src="js/explore_life.js"></script>
+<script src="js/laut_data.js"></script>
+<script src="js/laut_atlas.js"></script>
+<script src="js/laut.js"></script>
+<script src="js/kota_data.js"></script>
+<script src="js/kota_atlas.js"></script>
+<script src="js/kota.js"></script>
+<script src="js/portal_art.js"></script>
+<script src="js/nusantara.js"></script>
+<script src="js/explore.js"></script>
+<script src="js/online.js"></script>
+<script src="js/papan.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/video.js"></script>
+<script src="js/gen.js"></script>
+<script src="js/bank.js"></script>
+<script src="js/impor.js"></script>
+<script src="js/cloud.js"></script>
+<script src="js/guru.js"></script>
+<script src="js/rapor.js"></script>
+<script src="js/rekap.js"></script>
+<script src="js/eksplor3d.js"></script>
+<script src="js/petunjuk.js"></script>
+<script src="js/a11y.js"></script>
+<script src="js/misi.js"></script>
+<script src="js/laporan.js"></script>
+<script src="js/buatsoal.js"></script>
+<script src="js/lomba.js"></script>
+<script src="js/jsetup.js"></script>
+<script src="js/flip_data.js"></script>
+<script src="js/flip.js"></script>
+</body>
+</html>
