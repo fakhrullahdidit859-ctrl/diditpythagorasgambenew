@@ -13,8 +13,9 @@
    root        : nama folder induk di database (boleh dibiarkan).
    ========================================================= */
 window.PP_FIREBASE = {
-  databaseURL: '',
-  storageBucket: '',        // mis. 'NAMA-PROJECT.appspot.com' — untuk unggah video guru (opsional)
+  databaseURL: 'https://diditpetualangpythagoras-default-rtdb.asia-southeast1.firebasedatabase.app/',
+  storageBucket: '',
   root: 'pythagoras',
-  defaultRoom: 'UMUM'      // server umum bila siswa tidak mengisi kode ruangan
+  defaultRoom: 'UMUM'
 };
+
